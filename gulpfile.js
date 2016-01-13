@@ -7,9 +7,10 @@ var browserify = require('browserify') // Bundles JS
 var reactify = require('reactify')  // Transforms React JSX to JS
 var source = require('vinyl-source-stream') // Use conventional text streams with Gulp
 var concat = require('gulp-concat') // Concatenates files
+// var http = require('http').createServer(app)
 
 var config = {
-  port: 3000,
+  port: process.env.PORT || 3000,
   devBaseUrl: 'http://localhost',
   paths: {
     html: './src/*.html',
