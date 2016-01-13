@@ -4,8 +4,8 @@
   "description": "react-flux",
   "main": "main.js",
   "scripts": {
-    "start": "npm run build",
-    "build": "gulp",
+    "start": "node app",
+    "postInstall": "gulp default",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
