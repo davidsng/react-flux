@@ -45927,7 +45927,7 @@ var InitializeActions = require('./actions/initializeActions')
 
 InitializeActions.initApp()
 
-Router.run(routes, Router.HistoryLocation, function (Handler) {
+Router.run(routes, function (Handler) {
   React.render(React.createElement(Handler, null), document.getElementById('app'))
 })
 },{"./actions/initializeActions":205,"./routes":221,"react":202,"react-router":33}],221:[function(require,module,exports){
@@ -45950,7 +45950,6 @@ var routes = (
     React.createElement(Route, {name: "about", handler: require('./components/about/aboutPage')}), 
     React.createElement(NotFoundRoute, {handler: require('./components/notFoundPage')}), 
     React.createElement(Redirect, {from: "about-us", to: "about"}), 
-    React.createElement(Redirect, {from: "awthurs", to: "authors"}), 
     React.createElement(Redirect, {from: "about/*", to: "about"})
   )
 )
