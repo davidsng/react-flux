@@ -6,7 +6,6 @@
   "scripts": {
     "start": "npm run build",
     "build": "gulp",
-    "postInstall": "gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
